@@ -1,0 +1,569 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: white !important;
+    letter-spacing: 3px;
+    border-bottom: rgb(52, 58, 64) solid 2px;
+
+}
+
+.zhan {
+    background-color: rgb(52, 58, 64);
+}
+
+.zhan a {
+    color: white;
+}
+
+.nav-link:hover {
+    border-bottom: white solid 2px;
+}
+
+.navbar {
+    background-color:rgb(52, 58, 64);
+}
+
+.navbar-brand {
+    font-size: 25px;
+    letter-spacing: 4px;
+    box-shadow: 4px 4px 4px white;
+}
+
+.landing-page {
+    background-image: url('kerri.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pop-up {
+    position: relative;
+    top: 200px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pop-up .cont1 {
+    background-color: rgb(52, 58, 64);
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+}
+
+.pop-up {
+    top: -500px;
+    animation: drop 4s ease forwards;
+}
+
+.cont1 h1 {
+    color: white;
+    font-size: 30px;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(850px);
+    }
+
+    90% {
+        transform: translateY(750px);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+hr {
+    width: 200px;
+    height: 4px;
+    background-color:black;
+}
+
+input[type="search"] {
+    border-radius: 0px;
+}
+
+.para h1 {
+    background-color:rgb(52, 58, 64);
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+
+.image {
+    width: 100%;
+    height: 250px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: top;
+    border: gainsboro solid 4px;
+}
+
+.kolonat {
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.kolonat:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:rgb(52, 58, 64);
+    top: 0%;
+    left: -100%;
+    z-index: 1;
+    transform-origin: center top 0;
+    transition: .5s;
+}
+
+.kolonat:hover:before {
+    left: 0%;
+}
+
+.textfilm {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: -400%;
+    color: white;
+    z-index: 2;
+    transition: .7s;
+}
+
+.textfilm h1 {
+    font-size: 19px;
+    margin-bottom: 20px;
+    border-bottom: white solid 2px;
+}
+
+.kolonat:hover .textfilm {
+    top: 5%;
+}
+
+
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    background-color: rgb(52, 58, 64);
+    border-radius: 0px 40px 40px 0px;
+    color: white;
+}
+
+#carouselExampleIndicators img {
+    border-radius: 40px 0px 0px 40px;
+    overflow: hidden;
+    object-fit: fill;
+}
+
+
+
+.seri {
+    height: 50vh;
+    margin-bottom: 50px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.seri img:hover{
+    border: black solid 4px;
+    transition: 1s;
+}
+
+.seri img {
+    width: 100%;
+    height: 100%;
+    border: gainsboro solid 4px;
+    border-top: black solid 4px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.seri h3 {
+    background-color:rgb(52, 58, 64);
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+
+#carousel h4 {
+    background-color: rgb(52, 58, 64);
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+    box-shadow: 10px 12px 12px black;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.movies {
+    overflow: hidden;
+}
+
+.movies img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: black solid 4px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.movies img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+}
+
+#carouselExampleIndicators1 img {
+    border: black solid 4px;
+    border-radius: 10px;
+}
+
+#carousel h4 {
+    border: black solid 4px;
+}
+
+
+
+#zhanre {
+    background-color: rgb(52, 58, 64);
+    box-shadow: 20px 20px 11px black;
+    color: white;
+    font-size: 35px;
+    padding: 15px;
+}
+
+.image1 {
+    width: 100%;
+    height: 250px;
+}
+
+
+.aksion h5 {
+    background-color:rgb(52, 58, 64);
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+
+.bo {
+    margin-bottom: 60px;
+}
+
+.bo h5 {
+    border-bottom: black solid 4px;
+}
+
+.aksion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: gainsboro solid 4px;
+    border-top: black solid 4px;
+}
+
+.hov {
+    height: 300px;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hov:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:rgb(52, 58, 64);
+    top: 0%;
+    left: -100%;
+    z-index: 1;
+    transform-origin: center top 0;
+    transition: .5s;
+}
+
+.hov:hover:before {
+    left: 0%;
+}
+
+.textfilm1 {
+    width: 90%;
+    padding: 0px 20px;
+    position: absolute;
+    top: -400%;
+    color: white;
+    z-index: 2;
+    transition: .7s;
+}
+
+.textfilm1 h1 {
+    font-size: 19px;
+    margin-bottom: 20px;
+    border-bottom: white solid 2px;
+}
+
+.hov:hover .textfilm1 {
+    top: 5%;
+}
+
+.hov:hover {
+    transform: scale(1.080);
+    transition: 1s;
+}
+
+.vija {
+    background-color: gainsboro;
+    border: none;
+}
+
+
+.zhanret2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.pass {
+    box-shadow: 10px 10px 10px black;
+    overflow: hidden;
+}
+
+.pass img {
+    transition: 1s;
+}
+
+.pass img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+}
+
+.vija2 {
+    width: 400px;
+    background-color: black;
+}
+
+
+.lajmett img {
+    width: 100%;
+    height: 100%;
+}
+
+.lajmett {
+    border-bottom: black solid 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.m1{
+    font-size: 35px;
+}
+
+.con img{
+    margin-top: 40px;
+}
+.vijakontakti{
+    width: 400px;
+}
+
+label{
+    font-size: 24px;
+    margin: 0px;
+}
+#apliko:hover{
+    background-color: black;
+}
+textarea{
+    width: 100%;
+}
+form{
+    text-align: center;
+}
+.con img{
+    width: 100%;
+    height: 90%;
+}
+.follow i{
+    font-size: 25px;
+}
+
+.invalid-feedback{
+    color: black;
+}
+.valid-feedback{
+    color: black;
+}
+.was-validated .form-control:invalid{
+    border-color: black;
+}
+.was-validated .form-control:invalid:focus{
+    border-color:black;
+    box-shadow: none;
+}
+.was-validated .form-control:valid{
+    border-color: black;
+}
+.was-validated .form-control:valid:focus{
+    border-color:black;
+    background-color: white;
+    box-shadow: none;
+}
+.list-unstyled a{
+    text-decoration: none;
+    color: white;
+}
+.list-unstyled a:hover{
+    color: black;
+}
+
+
+
+::selection{
+    background-color:rgb(52, 58, 64);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:568px) {
+    .landing-page {
+        height: 100vh;
+        background-position: center;
+    }
+
+    .pop-up {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input[type="search"] {
+        display: none;
+    }
+
+    .kolonat {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    #carouselExampleIndicators {
+        margin-top: 50px;
+    }
+
+    .seri {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+
+    #carousel {
+        margin: 55px 0px 55px 0px;
+    }
+
+    .text {
+        width: 80%;
+        margin: auto;
+    }
+
+
+    #zhanre {
+        font-size: 50px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .hov {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+
+    .pass {
+        width: 150px;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .tel {
+        font-size: 40px;
+    }
+
+    .vija2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    #lajmet h4 {
+        font-size: 30px;
+    }
+    .vijakontakti{
+        width: 90%;
+        margin: auto;
+    }
+  
+
+
+
+
+}
+@media (max-width:300px){
+    .pop-up {
+        width: 200px;
+    }
+    .pop-up h1{
+        font-size: 22px;
+    }
+
+}
